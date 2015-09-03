@@ -29,7 +29,7 @@ namespace BussinesLogic
         }
 
 
-        public static book Checking(string username, string passwrod)
+        public static bool Checking(string username, string passwrod)
         {
             if (username.ToUpper() == "ADMIN" && passwrod.ToUpper() == "PASSWORD")
             {
