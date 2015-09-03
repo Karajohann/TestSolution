@@ -15,9 +15,23 @@ namespace BussinesLogic
         /// <param name="username"></param>
         /// <param name="passwrod"></param>
         /// <returns></returns>
-        public static bool Check(string username,string passwrod)
+        [Obsolete("New method Checking",true)]
+        public static bool Check(string username, string passwrod)
         {
-            if(username.ToUpper() == "ADMIN" && passwrod.ToUpper() == "PASSWORD")
+            if (username.ToUpper() == "ADMIN" && passwrod.ToUpper() == "PASSWORD")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        public static book Checking(string username, string passwrod)
+        {
+            if (username.ToUpper() == "ADMIN" && passwrod.ToUpper() == "PASSWORD")
             {
                 return true;
             }
